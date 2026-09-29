@@ -137,7 +137,10 @@
   }
   .thumbs button.on { background: #fff; }
 
+  .card { scroll-margin-top: 16px; }
+  .card.highlight { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 12px; }
   .card .info { display: flex; flex-direction: column; gap: 2px; }
+  .card .info .sku { font-size: 10px; font-weight: 600; letter-spacing: .5px; color: var(--text3); text-transform: uppercase; }
   .card .info .name { font-size: 15px; font-weight: 500; line-height: 1.25; }
   .card .info .detail { font-size: 12px; color: var(--text3); min-height: 1.6em; }
   .card .info .price {
@@ -204,12 +207,13 @@
   <div class="count-label" id="countLabel"></div>
 
   <div class="grid" id="grid">
-    <article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v01a.jpg?v=1790508935|img/v01b.jpg?v=1790508935">
-          <img src="img/v01a.jpg?v=1790508935" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v01a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v01b.jpg?v=1790508935')"></button></div>
+    <article class="card" id="AUR-01" data-cat="vestidos">
+      <div class="photo" data-images="img/v01a.jpg?v=1790705366|img/v01b.jpg?v=1790705366">
+          <img src="img/v01a.jpg?v=1790705366" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v01a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v01b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-01</div>
         <div class="name">Vestido de Crepe Sensorial</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 199,99</div>
@@ -219,12 +223,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v17a.jpg?v=1790508935|img/v17b.jpg?v=1790508935">
-          <img src="img/v17a.jpg?v=1790508935" alt="Vestido de Linho Bordado" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v17a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v17b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-02" data-cat="vestidos">
+      <div class="photo" data-images="img/v17a.jpg?v=1790705366|img/v17b.jpg?v=1790705366">
+          <img src="img/v17a.jpg?v=1790705366" alt="Vestido de Linho Bordado" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v17a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v17b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-02</div>
         <div class="name">Vestido de Linho Bordado</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 189,99</div>
@@ -234,12 +239,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v18a.jpg?v=1790508935">
-          <img src="img/v18a.jpg?v=1790508935" alt="Vestido de Linho Bordado" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-03" data-cat="vestidos">
+      <div class="photo" data-images="img/v18a.jpg?v=1790705366">
+          <img src="img/v18a.jpg?v=1790705366" alt="Vestido de Linho Bordado" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-03</div>
         <div class="name">Vestido de Linho Bordado</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 269,99</div>
@@ -249,12 +255,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v19a.jpg?v=1790508935|img/v19b.jpg?v=1790508935|img/v19c.jpg?v=1790508935">
-          <img src="img/v19a.jpg?v=1790508935" alt="Vestido de Linho Poá" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v19a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v19b.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v19c.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-04" data-cat="vestidos">
+      <div class="photo" data-images="img/v19a.jpg?v=1790705366|img/v19b.jpg?v=1790705366|img/v19c.jpg?v=1790705366">
+          <img src="img/v19a.jpg?v=1790705366" alt="Vestido de Linho Poá" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v19a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v19b.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v19c.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-04</div>
         <div class="name">Vestido de Linho Poá</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 189,99</div>
@@ -264,12 +271,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v20a.jpg?v=1790508935|img/v20b.jpg?v=1790508935|img/v20c.jpg?v=1790508935">
-          <img src="img/v20a.jpg?v=1790508935" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v20a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v20b.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v20c.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-05" data-cat="vestidos">
+      <div class="photo" data-images="img/v20a.jpg?v=1790705366|img/v20b.jpg?v=1790705366|img/v20c.jpg?v=1790705366">
+          <img src="img/v20a.jpg?v=1790705366" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v20a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v20b.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v20c.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-05</div>
         <div class="name">Vestido de Crepe Sensorial</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 199,99</div>
@@ -279,12 +287,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v10a.jpg?v=1790508935|img/v10b.jpg?v=1790508935|img/v10c.jpg?v=1790508935">
-          <img src="img/v10a.jpg?v=1790508935" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v10a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v10b.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v10c.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-06" data-cat="vestidos">
+      <div class="photo" data-images="img/v10a.jpg?v=1790705366|img/v10b.jpg?v=1790705366|img/v10c.jpg?v=1790705366">
+          <img src="img/v10a.jpg?v=1790705366" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v10a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v10b.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v10c.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-06</div>
         <div class="name">Vestido de Crepe Sensorial</div>
         <div class="detail">Tamanho: G</div>
         <div class="price">R$ 199,99</div>
@@ -294,12 +303,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v11a.jpg?v=1790508935|img/v11b.jpg?v=1790508935">
-          <img src="img/v11a.jpg?v=1790508935" alt="Vestido Floral de Alfaiataria" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v11a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v11b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-07" data-cat="vestidos">
+      <div class="photo" data-images="img/v11a.jpg?v=1790705366|img/v11b.jpg?v=1790705366">
+          <img src="img/v11a.jpg?v=1790705366" alt="Vestido Floral de Alfaiataria" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v11a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v11b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-07</div>
         <div class="name">Vestido Floral de Alfaiataria</div>
         <div class="detail">Tamanho: 40</div>
         <div class="price">R$ 199,99</div>
@@ -309,12 +319,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v12a.jpg?v=1790508935|img/v12b.jpg?v=1790508935|img/v12c.jpg?v=1790508935">
-          <img src="img/v12a.jpg?v=1790508935" alt="Vestido de Lese Bordado" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v12a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v12b.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v12c.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-08" data-cat="vestidos">
+      <div class="photo" data-images="img/v12a.jpg?v=1790705366|img/v12b.jpg?v=1790705366|img/v12c.jpg?v=1790705366">
+          <img src="img/v12a.jpg?v=1790705366" alt="Vestido de Lese Bordado" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v12a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v12b.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v12c.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-08</div>
         <div class="name">Vestido de Lese Bordado</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 259,99</div>
@@ -324,12 +335,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v13a.jpg?v=1790508935|img/v13b.jpg?v=1790508935|img/v13c.jpg?v=1790508935">
-          <img src="img/v13a.jpg?v=1790508935" alt="Vestido de Linho" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v13a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v13b.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v13c.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-09" data-cat="vestidos">
+      <div class="photo" data-images="img/v13a.jpg?v=1790705366|img/v13b.jpg?v=1790705366|img/v13c.jpg?v=1790705366">
+          <img src="img/v13a.jpg?v=1790705366" alt="Vestido de Linho" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v13a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v13b.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v13c.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-09</div>
         <div class="name">Vestido de Linho</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 209,99</div>
@@ -339,12 +351,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v14a.jpg?v=1790508935|img/v14b.jpg?v=1790508935">
-          <img src="img/v14a.jpg?v=1790508935" alt="Vestido de Richilieu" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v14a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v14b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-10" data-cat="vestidos">
+      <div class="photo" data-images="img/v14a.jpg?v=1790705366|img/v14b.jpg?v=1790705366">
+          <img src="img/v14a.jpg?v=1790705366" alt="Vestido de Richilieu" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v14a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v14b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-10</div>
         <div class="name">Vestido de Richilieu</div>
         <div class="detail">Tamanho: GG</div>
         <div class="price">R$ 299,99</div>
@@ -354,12 +367,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v16a.jpg?v=1790508935|img/v16b.jpg?v=1790508935">
-          <img src="img/v16a.jpg?v=1790508935" alt="Vestido Mid Bordado" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v16a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v16b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-11" data-cat="vestidos">
+      <div class="photo" data-images="img/v16a.jpg?v=1790705366|img/v16b.jpg?v=1790705366">
+          <img src="img/v16a.jpg?v=1790705366" alt="Vestido Mid Bordado" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v16a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v16b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-11</div>
         <div class="name">Vestido Mid Bordado</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 239,99</div>
@@ -369,12 +383,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v09a.jpg?v=1790508935|img/v09b.jpg?v=1790508935|img/v09c.jpg?v=1790508935">
-          <img src="img/v09a.jpg?v=1790508935" alt="Vestido de Linho" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v09a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v09b.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v09c.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-12" data-cat="vestidos">
+      <div class="photo" data-images="img/v09a.jpg?v=1790705366|img/v09b.jpg?v=1790705366|img/v09c.jpg?v=1790705366">
+          <img src="img/v09a.jpg?v=1790705366" alt="Vestido de Linho" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v09a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v09b.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v09c.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-12</div>
         <div class="name">Vestido de Linho</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 189,99</div>
@@ -384,12 +399,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v04a.jpg?v=1790508935">
-          <img src="img/v04a.jpg?v=1790508935" alt="Vestido de Algodão Mid" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-13" data-cat="vestidos">
+      <div class="photo" data-images="img/v04a.jpg?v=1790705366">
+          <img src="img/v04a.jpg?v=1790705366" alt="Vestido de Algodão Mid" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-13</div>
         <div class="name">Vestido de Algodão Mid</div>
         <div class="detail">Tamanho: 42, 48</div>
         <div class="price">R$ 199,99</div>
@@ -399,12 +415,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v08a.jpg?v=1790508935|img/v08b.jpg?v=1790508935">
-          <img src="img/v08a.jpg?v=1790508935" alt="Vestido de Chiffon Devorê" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v08a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v08b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-14" data-cat="vestidos">
+      <div class="photo" data-images="img/v08a.jpg?v=1790705366|img/v08b.jpg?v=1790705366">
+          <img src="img/v08a.jpg?v=1790705366" alt="Vestido de Chiffon Devorê" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v08a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v08b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-14</div>
         <div class="name">Vestido de Chiffon Devorê</div>
         <div class="detail">Tamanho: 40</div>
         <div class="price">R$ 239,99</div>
@@ -414,12 +431,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v06a.jpg?v=1790508935">
-          <img src="img/v06a.jpg?v=1790508935" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-15" data-cat="vestidos">
+      <div class="photo" data-images="img/v06a.jpg?v=1790705366">
+          <img src="img/v06a.jpg?v=1790705366" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-15</div>
         <div class="name">Vestido de Crepe Sensorial</div>
         <div class="detail">Tamanho: M</div>
         <div class="price">R$ 199,99</div>
@@ -429,12 +447,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v03a.jpg?v=1790508935">
-          <img src="img/v03a.jpg?v=1790508935" alt="Vestido de Linho" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-16" data-cat="vestidos">
+      <div class="photo" data-images="img/v03a.jpg?v=1790705366">
+          <img src="img/v03a.jpg?v=1790705366" alt="Vestido de Linho" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-16</div>
         <div class="name">Vestido de Linho</div>
         <div class="detail">Tamanho: M</div>
         <div class="price">R$ 209,99</div>
@@ -444,12 +463,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v05a.jpg?v=1790508935">
-          <img src="img/v05a.jpg?v=1790508935" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-17" data-cat="vestidos">
+      <div class="photo" data-images="img/v05a.jpg?v=1790705366">
+          <img src="img/v05a.jpg?v=1790705366" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-17</div>
         <div class="name">Vestido de Crepe Sensorial</div>
         <div class="detail">Tamanho: M, G</div>
         <div class="price">R$ 199,99</div>
@@ -459,12 +479,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v07a.jpg?v=1790508935">
-          <img src="img/v07a.jpg?v=1790508935" alt="Vestido de Crepe Floral" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-18" data-cat="vestidos">
+      <div class="photo" data-images="img/v07a.jpg?v=1790705366">
+          <img src="img/v07a.jpg?v=1790705366" alt="Vestido de Crepe Floral" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-18</div>
         <div class="name">Vestido de Crepe Floral</div>
         <div class="detail">Tamanho: 40</div>
         <div class="price">R$ 199,99</div>
@@ -474,12 +495,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v15a.jpg?v=1790508935">
-          <img src="img/v15a.jpg?v=1790508935" alt="Vestido Bordado" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-19" data-cat="vestidos">
+      <div class="photo" data-images="img/v15a.jpg?v=1790705366">
+          <img src="img/v15a.jpg?v=1790705366" alt="Vestido Bordado" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-19</div>
         <div class="name">Vestido Bordado</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 239,99</div>
@@ -489,12 +511,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v02a.jpg?v=1790508935|img/v02b.jpg?v=1790508935|img/v02c.jpg?v=1790508935">
-          <img src="img/v02a.jpg?v=1790508935" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v02a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v02b.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v02c.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-20" data-cat="vestidos">
+      <div class="photo" data-images="img/v02a.jpg?v=1790705366|img/v02b.jpg?v=1790705366|img/v02c.jpg?v=1790705366">
+          <img src="img/v02a.jpg?v=1790705366" alt="Vestido de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/v02a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v02b.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/v02c.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-20</div>
         <div class="name">Vestido de Crepe Sensorial</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 199,99</div>
@@ -504,12 +527,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="vestidos">
-      <div class="photo" data-images="img/v21a.jpg?v=1790508935">
-          <img src="img/v21a.jpg?v=1790508935" alt="Vestido de Linho c/ Lurex" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-21" data-cat="vestidos">
+      <div class="photo" data-images="img/v21a.jpg?v=1790705366">
+          <img src="img/v21a.jpg?v=1790705366" alt="Vestido de Linho c/ Lurex" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-21</div>
         <div class="name">Vestido de Linho c/ Lurex</div>
         <div class="detail">Tamanho: 42, 48</div>
         <div class="price">R$ 279,99</div>
@@ -519,12 +543,13 @@
         Pedir
       </a>
     </article>
-    <article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c16a.jpg?v=1790508935|img/c16b.jpg?v=1790508935">
-          <img src="img/c16a.jpg?v=1790508935" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c16a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c16b.jpg?v=1790508935')"></button></div>
+    <article class="card" id="AUR-22" data-cat="conjuntos">
+      <div class="photo" data-images="img/c16a.jpg?v=1790705366|img/c16b.jpg?v=1790705366">
+          <img src="img/c16a.jpg?v=1790705366" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c16a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c16b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-22</div>
         <div class="name">Conjunto de Linho</div>
         <div class="detail">Tamanho: M, G</div>
         <div class="price">R$ 269,99</div>
@@ -534,12 +559,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c17a.jpg?v=1790508935|img/c17b.jpg?v=1790508935">
-          <img src="img/c17a.jpg?v=1790508935" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c17a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c17b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-23" data-cat="conjuntos">
+      <div class="photo" data-images="img/c17a.jpg?v=1790705366|img/c17b.jpg?v=1790705366">
+          <img src="img/c17a.jpg?v=1790705366" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c17a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c17b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-23</div>
         <div class="name">Conjunto de Linho</div>
         <div class="detail">Tamanho: M</div>
         <div class="price">R$ 279,99</div>
@@ -549,12 +575,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos plus">
-      <div class="photo" data-images="img/c02a.jpg?v=1790508935">
-          <img src="img/c02a.jpg?v=1790508935" alt="Conjunto de Crepe" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-24" data-cat="conjuntos plus">
+      <div class="photo" data-images="img/c02a.jpg?v=1790705366">
+          <img src="img/c02a.jpg?v=1790705366" alt="Conjunto de Crepe" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-24</div>
         <div class="name">Conjunto de Crepe</div>
         <div class="detail">Tamanho: GG, G1</div>
         <div class="price">R$ 229,99</div>
@@ -564,12 +591,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c06a.jpg?v=1790508935">
-          <img src="img/c06a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-25" data-cat="conjuntos">
+      <div class="photo" data-images="img/c06a.jpg?v=1790705366">
+          <img src="img/c06a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-25</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 229,99</div>
@@ -579,12 +607,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos plus">
-      <div class="photo" data-images="img/c03a.jpg?v=1790508935">
-          <img src="img/c03a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+<article class="card" id="AUR-26" data-cat="conjuntos plus">
+      <div class="photo" data-images="img/c03a.jpg?v=1790705366">
+          <img src="img/c03a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
           
         </div>
       <div class="info">
+        <div class="sku">AUR-26</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: M, GG, G2</div>
         <div class="price">R$ 229,99</div>
@@ -594,12 +623,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c04a.jpg?v=1790508935|img/c04b.jpg?v=1790508935">
-          <img src="img/c04a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c04a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c04b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-27" data-cat="conjuntos">
+      <div class="photo" data-images="img/c04a.jpg?v=1790705366|img/c04b.jpg?v=1790705366">
+          <img src="img/c04a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c04a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c04b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-27</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: M</div>
         <div class="price">R$ 229,99</div>
@@ -609,12 +639,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c07a.jpg?v=1790508935|img/c07b.jpg?v=1790508935">
-          <img src="img/c07a.jpg?v=1790508935" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c07a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c07b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-28" data-cat="conjuntos">
+      <div class="photo" data-images="img/c07a.jpg?v=1790705366|img/c07b.jpg?v=1790705366">
+          <img src="img/c07a.jpg?v=1790705366" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c07a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c07b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-28</div>
         <div class="name">Conjunto de Linho</div>
         <div class="detail">Tamanho: M</div>
         <div class="price">R$ 269,99</div>
@@ -624,12 +655,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c08a.jpg?v=1790508935|img/c08b.jpg?v=1790508935">
-          <img src="img/c08a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c08a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c08b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-29" data-cat="conjuntos">
+      <div class="photo" data-images="img/c08a.jpg?v=1790705366|img/c08b.jpg?v=1790705366">
+          <img src="img/c08a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c08a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c08b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-29</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: G</div>
         <div class="price">R$ 229,99</div>
@@ -639,12 +671,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c09a.jpg?v=1790508935|img/c09b.jpg?v=1790508935">
-          <img src="img/c09a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c09a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c09b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-30" data-cat="conjuntos">
+      <div class="photo" data-images="img/c09a.jpg?v=1790705366|img/c09b.jpg?v=1790705366">
+          <img src="img/c09a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c09a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c09b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-30</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: G</div>
         <div class="price">R$ 229,99</div>
@@ -654,12 +687,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c10a.jpg?v=1790508935|img/c10b.jpg?v=1790508935">
-          <img src="img/c10a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c10a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c10b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-31" data-cat="conjuntos">
+      <div class="photo" data-images="img/c10a.jpg?v=1790705366|img/c10b.jpg?v=1790705366">
+          <img src="img/c10a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c10a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c10b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-31</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: G</div>
         <div class="price">R$ 229,99</div>
@@ -669,12 +703,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c11a.jpg?v=1790508935|img/c11b.jpg?v=1790508935">
-          <img src="img/c11a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c11a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c11b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-32" data-cat="conjuntos">
+      <div class="photo" data-images="img/c11a.jpg?v=1790705366|img/c11b.jpg?v=1790705366">
+          <img src="img/c11a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c11a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c11b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-32</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: G</div>
         <div class="price">R$ 229,99</div>
@@ -684,12 +719,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c12a.jpg?v=1790508935|img/c12b.jpg?v=1790508935">
-          <img src="img/c12a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c12a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c12b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-33" data-cat="conjuntos">
+      <div class="photo" data-images="img/c12a.jpg?v=1790705366|img/c12b.jpg?v=1790705366">
+          <img src="img/c12a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c12a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c12b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-33</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: G</div>
         <div class="price">R$ 229,99</div>
@@ -699,12 +735,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c13a.jpg?v=1790508935|img/c13b.jpg?v=1790508935">
-          <img src="img/c13a.jpg?v=1790508935" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c13a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c13b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-34" data-cat="conjuntos">
+      <div class="photo" data-images="img/c13a.jpg?v=1790705366|img/c13b.jpg?v=1790705366">
+          <img src="img/c13a.jpg?v=1790705366" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c13a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c13b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-34</div>
         <div class="name">Conjunto de Linho</div>
         <div class="detail">Tamanho: G</div>
         <div class="price">R$ 279,99</div>
@@ -714,12 +751,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c05a.jpg?v=1790508935|img/c05b.jpg?v=1790508935">
-          <img src="img/c05a.jpg?v=1790508935" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c05a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c05b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-35" data-cat="conjuntos">
+      <div class="photo" data-images="img/c05a.jpg?v=1790705366|img/c05b.jpg?v=1790705366">
+          <img src="img/c05a.jpg?v=1790705366" alt="Conjunto de Linho" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c05a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c05b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-35</div>
         <div class="name">Conjunto de Linho</div>
         <div class="detail">Tamanho: M</div>
         <div class="price">R$ 279,99</div>
@@ -729,12 +767,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c14a.jpg?v=1790508935|img/c14b.jpg?v=1790508935">
-          <img src="img/c14a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c14a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c14b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-36" data-cat="conjuntos">
+      <div class="photo" data-images="img/c14a.jpg?v=1790705366|img/c14b.jpg?v=1790705366">
+          <img src="img/c14a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c14a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c14b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-36</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: Único</div>
         <div class="price">R$ 229,99</div>
@@ -744,12 +783,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c15a.jpg?v=1790508935|img/c15b.jpg?v=1790508935">
-          <img src="img/c15a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c15a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c15b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-37" data-cat="conjuntos">
+      <div class="photo" data-images="img/c15a.jpg?v=1790705366|img/c15b.jpg?v=1790705366">
+          <img src="img/c15a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c15a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c15b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-37</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: M, G</div>
         <div class="price">R$ 229,99</div>
@@ -759,12 +799,13 @@
         Pedir
       </a>
     </article>
-<article class="card" data-cat="conjuntos">
-      <div class="photo" data-images="img/c01a.jpg?v=1790508935|img/c01b.jpg?v=1790508935">
-          <img src="img/c01a.jpg?v=1790508935" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
-          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c01a.jpg?v=1790508935')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c01b.jpg?v=1790508935')"></button></div>
+<article class="card" id="AUR-38" data-cat="conjuntos">
+      <div class="photo" data-images="img/c01a.jpg?v=1790705366|img/c01b.jpg?v=1790705366">
+          <img src="img/c01a.jpg?v=1790705366" alt="Conjunto de Crepe Sensorial" loading="lazy" onclick="openLightbox(this)">
+          <div class="thumbs"><button type="button" class="on" onclick="event.stopPropagation();swapPhoto(this,'img/c01a.jpg?v=1790705366')"></button><button type="button" class="" onclick="event.stopPropagation();swapPhoto(this,'img/c01b.jpg?v=1790705366')"></button></div>
         </div>
       <div class="info">
+        <div class="sku">AUR-38</div>
         <div class="name">Conjunto de Crepe Sensorial</div>
         <div class="detail">Tamanho: M</div>
         <div class="price">R$ 229,99</div>
@@ -851,6 +892,21 @@
     });
   });
   applyFilter('todos');
+
+  function goToHashCard() {
+    const sku = decodeURIComponent(location.hash.slice(1));
+    if (!sku) return;
+    const el = document.getElementById(sku);
+    if (!el) return;
+    el.style.display = '';
+    setTimeout(() => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('highlight');
+      setTimeout(() => el.classList.remove('highlight'), 2500);
+    }, 150);
+  }
+  window.addEventListener('hashchange', goToHashCard);
+  goToHashCard();
 </script>
 </body>
 </html>
